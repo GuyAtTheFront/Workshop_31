@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    width: 50%;
+    margin: 10px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+    /* align-items: center; */
+    justify-content: center;
+}

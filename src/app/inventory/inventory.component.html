@@ -1,0 +1,14 @@
+<h2>Please Select</h2>
+<table>
+    <tr *ngFor="let item of inventoryItems">
+        <td>
+            <img [src]="item.image" width="50" height="50">
+        </td>
+        <td>
+            <p [innerText]="item.description"></p>
+        </td>
+        <td>
+            <button type="button" (click)="onAddItem(item)"> Add </button>
+        </td>
+    </tr>
+</table>

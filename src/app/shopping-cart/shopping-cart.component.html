@@ -1,0 +1,14 @@
+<h2> My Cart </h2>
+<table>
+    <tr *ngFor="let item of cartItems">
+        <td>
+            <img src="{{ item.image }}" width="50" height="50">
+        </td>
+        <td>
+            <p>{{ item.description }}, quantity: {{ item.quantity }}</p>
+        </td>
+        <td>
+            <button type="button" (click)="onRemoveItem(item)">Remove</button>
+        </td>
+    </tr>
+</table>
